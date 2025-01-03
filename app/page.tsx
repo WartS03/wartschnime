@@ -1,4 +1,4 @@
-import { DataAnime } from "./Component/DataAnime"
+import { DataAnime } from "./Components/DataAnime"
 const Home = () => {
 
   return (
