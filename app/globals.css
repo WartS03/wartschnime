@@ -16,3 +16,92 @@
 .loading-xl{
     width: 128px;
 }
+#loddatan{
+    position: fixed; left: 50%; top: 100%; z-index: 999;
+    width: 100vw; height: 100vh;
+    object-fit: none;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#loddatan {
+    opacity: 0; visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+
+}
+
+#loddatan.show {
+    opacity: 1; visibility: visible;
+}
+.amv {
+    width: 180px;
+    height: 110px;
+    display: inline-table;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 10pt;
+    color: #ff0;
+    text-shadow: -1px -1px 5px #000, 1px -1px 5px #000, -1px 1px 5px #000, 0 3px 2px #000;
+    position: relative;
+    background-size: 180px 110px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: #000;
+}
+.imgfc{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0 !important;
+    border: none !important;
+    display: block;
+    height: 0;
+    max-height: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    width: 0;
+    margin: auto;
+}
+.pdimg{
+    width: 180px;
+    height: 110px;
+}
+.amvj {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.0));
+    border-radius: 5px;
+    position: absolute;
+    top: 0px;
+    font-size: 9pt;
+    width: 100%;
+}
+h3.ibox1 {
+    margin: 0;
+    text-transform: capitalize;
+    font-family: roboto, sans-serif;
+    text-align: left;
+    padding: 5px;
+    line-height: normal;
+    font-weight: 500;
+}
+.jamup {
+    position: absolute;
+    right: 5px;
+    bottom: 1px;
+    color: #fff;
+    text-align: right;
+    font-size: 11px;
+    font-weight: 800;
+    transition: .3s;
+}
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}

@@ -28,16 +28,29 @@ export const DataAnime = () => {
     const result = await response.json()
     setSelectedAnime(result)
   }
-
-  if (loading) return <div suppressHydrationWarning>Loading...</div>
   return (
-    <div suppressHydrationWarning className='columns-1 gap-1 sm:columns-2'>
+    <div className=''>
+      {
+        loading && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-100">
+              <span className="loading loading-ring text-primary loading-xl"></span>
+          </div>
+        )
+      }
       {anime.data.map((item: any) => (
-        <div suppressHydrationWarning className="mb-3 text-white flex" key={item.id}>
-            <Link className="hover:font-bold truncate p-2 bg-teal-700 rounded-md" onClick={() => handleOpenModal(item.id)} type='button' href="#">
-              {item.title}
-            </Link>
-        </div>
+        <a onClick={() => handleOpenModal(item.id)} key={item.id} className="cursor-pointer hover:scale-105">
+          <div suppressHydrationWarning className="mb-3 mr-2 text-white amv rounded-lg" key={item.id}>
+            <div className='rounded-lg relative overflow-hidden pdimg block'>
+              <img decoding='async' className='imgfc' src={item.image} />
+            </div>
+            <div className="amvj">
+              <h3 className='ibox1'>{item.title}</h3>
+            </div>
+            <div className="jamup">
+              {item.rilis}
+            </div>
+          </div>
+        </a>
       ))}
       <Modal data={selectedAnime} />
     </div>

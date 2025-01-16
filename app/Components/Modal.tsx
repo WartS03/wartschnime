@@ -1,6 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
-
 interface ModalProps {
   data: any | null;
 }
