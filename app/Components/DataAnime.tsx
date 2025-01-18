@@ -38,7 +38,7 @@ export const DataAnime = () => {
         )
       }
       {anime.data.map((item: any) => (
-        <a onClick={() => handleOpenModal(item.id)} key={item.id} className="cursor-pointer hover:scale-105">
+        <a onClick={() => handleOpenModal(item.id)} key={item.id} className="cursor-pointer">
           <div suppressHydrationWarning className="mb-3 mr-2 text-white amv rounded-lg" key={item.id}>
             <div className='rounded-lg relative overflow-hidden pdimg block'>
               <img decoding='async' className='imgfc' src={item.image} />
