@@ -15,7 +15,7 @@ const Modal:React.FC<ModalProps> = ({data}) => {
 
     return (
       <dialog id="myModal" className="modal">
-      <div className="modal-box w-12/12 max-w-7xl">
+      <div className="modal-box w-9/12 max-w-full">
       <div className="flex">
         <Image 
           className="rounded-lg" 
@@ -25,8 +25,8 @@ const Modal:React.FC<ModalProps> = ({data}) => {
           height={100} 
         />
         <div className=" mx-4">      
-          <h3 className="font-bold text-xl">{data.data.title}</h3>
-          <p className="py-4">{data.data.description}</p>
+          <h4 className="font-bold text-xl">{data.data.title}</h4>
+          <p className="py-2">{data.data.description}</p>
           <div className="flex mb-5">
           {Object.values(data.data.genres).map((genre: any, index: number) => (
               <h1 className="font-bold text-sm mr-2 p-2 bg-slate-900 rounded-md" key={index}>{genre}</h1>

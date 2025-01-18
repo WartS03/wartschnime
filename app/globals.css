@@ -108,13 +108,13 @@ h3 {
 .amv:hover .imgfc {
     transform: scale(1.1);
     transition: transform 0.2s ease, font-weight 0.3s ease;
-  }
-  
-  .amv:hover .ibox1 {
-    font-weight: bold;
-    transition: font-weight 0.2s ease;
-  }
-  .imgfc {
-    transform: scale(1); /* Default size */
-    transition: transform 0.3s ease-out; /* Animasi kembali */
-  }
+}
+
+.amv:hover .ibox1 {
+font-weight: bold;
+transition: font-weight 0.2s ease;
+}
+.imgfc {
+transform: scale(1); /* Default size */
+transition: transform 0.3s ease-out; /* Animasi kembali */
+}
