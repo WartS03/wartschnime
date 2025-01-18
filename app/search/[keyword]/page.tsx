@@ -1,12 +1,8 @@
-
-import { NextPage } from 'next';
-import { ParsedUrlQuery } from 'querystring';
-
-interface Params extends ParsedUrlQuery {
+interface Params{
   keyword: string;
 }
 
-const Page: NextPage<{ params: Params }> = async ({ params }) => {
+const Page = async ({ params }: { params: Params }) => {
   const { keyword } = await params;
   const response = await fetch(`https://wartsanimeapi.vercel.app/api/search?s=${keyword}`);
   const searchAnime = await response.json();
