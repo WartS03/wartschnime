@@ -4,6 +4,9 @@
 :root:has(:is(.modal-open, .modal:target, .modal-toggle:checked + .modal, .modal[open])) {
     scrollbar-gutter: auto;
 }
+:root{
+    background: #0b0c2a;
+}
 .modal[open] .modal-box {
     --tw-translate-y: -72px;
 }
