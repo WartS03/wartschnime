@@ -1,8 +1,5 @@
-interface PageProps {
-  params: {
-    keyword: string;
-  };
-}
+import { PageProps } from '@/.next/types/app/search/[keyword]/page';
+
 
 const Page = async ({ params }: PageProps) => {
   const { keyword } = await params;
